@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Smart Clock Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+<h1>Smart Clock Dashboard</h1>
+
+<button id="themeToggle">Toggle Theme</button>
+
+<!-- CLOCK -->
+
+<div class="clock">
+<span id="hours">00</span> :
+<span id="minutes">00</span> :
+<span id="seconds">00</span>
+</div>
+
+<p id="date"></p>
+
+<!-- ALARM -->
+
+<div class="card">
+
+<h2>Set Alarm</h2>
+
+<input type="time" id="alarmTime">
+
+<button id="setAlarm">Set Alarm</button>
+
+</div>
+
+<!-- TIMER -->
+
+<div class="card">
+
+<h2>Countdown Timer</h2>
+
+<input type="number" id="timerMinutes" placeholder="Minutes">
+
+<button id="startTimer">Start Timer</button>
+
+<p id="timerDisplay"></p>
+
+</div>
+
+<!-- WORLD CLOCK -->
+
+<div class="card">
+
+<h2>World Clock</h2>
+
+<p id="india"></p>
+<p id="newyork"></p>
+<p id="london"></p>
+<p id="tokyo"></p>
+
+</div>
+
+<!-- WEATHER -->
+
+<div class="card">
+
+<h2>Weather</h2>
+
+<p id="weather">Loading...</p>
+
+</div>
+
+</div>
+
+<audio id="alarmSound" src="https://actions.google.com/sounds/v1/alarms/alarm_clock.ogg"></audio>
+
+<script src="script.js"></script>
+
+</body>
+</html>
